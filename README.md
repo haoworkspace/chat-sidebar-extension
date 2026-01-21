@@ -1,33 +1,65 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# 📑 Chat Sidebar (for Gemini)
 
-## Getting Started
+> **"不再迷失在长对话的海洋里。"**
+> 
+> 一个 AI 原生的 Chrome 侧边栏插件，为 Gemini 对话提供自动目录索引、一键跳转与 Markdown 导出功能。
 
-First, run the development server:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-v1.1.0-green)
+![Tech](https://img.shields.io/badge/tech-Plasmo%20%7C%20React%20%7C%20Tailwind-orange)
+
+## 📖 简介 (Introduction)
+
+作为 AI 重度用户，你是否也遇到过这种情况：在一个 Session 里聊了上百轮，想找半小时前的一段代码或文案，却只能疯狂滚动鼠标滚轮？
+
+**Chat Sidebar** 就是为了解决这个痛点而生。它像电子书目录一样，自动解析你的对话结构，在侧边栏生成清晰的导航索引，点击即可直达。
+
+## ✨ 核心功能 (Features)
+
+- **📑 自动目录索引**：基于 DOM 智能解析，实时生成对话大纲。
+- **🌗 自动深色/浅色模式**：跟随系统或浏览器主题，自动切换黑/白配色，完美融入原生界面。
+- **🫣 侧边栏收纳**：不需要时可点击“➖”收起为悬浮小图标，还你清爽视界。
+- **⬇️ 一键导出**：支持将完整对话导出为标准 Markdown (`.md`) 文件，方便存档。
+- **⚡️ 极速轻量**：基于 React + Plasmo 构建，0 侵入，高性能。
+
+## 🛠️ 安装方法 (Installation)
+
+### 方式一：直接安装 (推荐用户)
+1. 前往 [Releases 页面](../../releases) 下载最新的 `.zip` 压缩包。
+2. 打开 Chrome 扩展管理页 (`chrome://extensions/`)。
+3. 开启右上角的 **"开发者模式"**。
+4. 将解压后的文件夹（或 zip 包）拖入页面即可。
+
+### 方式二：源码编译 (推荐开发者)
+
+如果你想自己修改代码，可以克隆仓库进行编译：
 
 ```bash
-pnpm dev
-# or
+# 1. 克隆仓库
+git clone [https://github.com/haoworkspace/chat-sidebar-extension.git](https://github.com/haoworkspace/chat-sidebar-extension.git)
+
+# 2. 安装依赖
+npm install
+
+# 3. 启动开发服务器
 npm run dev
-```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
-
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
-
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
-
-## Making production build
-
-Run the following:
-
-```bash
-pnpm build
-# or
+# 4. 构建生产版本
 npm run build
-```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+```markdown
+## 🤝 贡献 (Contributing)
 
-## Submit to the webstores
+这是一个开源项目，欢迎提交 Issue 或 Pull Request！
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交改动 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by Leo using Plasmo & React</sub>
+</div>
