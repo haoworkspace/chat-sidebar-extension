@@ -34,7 +34,8 @@
 
 如果你想自己修改代码，可以克隆仓库进行编译：
 
-```bash
+```
+
 # 1. 克隆仓库
 git clone [https://github.com/haoworkspace/chat-sidebar-extension.git](https://github.com/haoworkspace/chat-sidebar-extension.git)
 
@@ -47,7 +48,8 @@ npm run dev
 # 4. 构建生产版本
 npm run build
 
-```markdown
+```
+
 ## 🤝 贡献 (Contributing)
 
 这是一个开源项目，欢迎提交 Issue 或 Pull Request！
