@@ -1,4 +1,3 @@
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -19,15 +18,23 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
-.env*.local
+# local env files (安全加强版：忽略所有以 .env 开头的文件)
+.env*
+# 如果你愿意，可以手动放行 .env.example 作为模板
+! .env.example
 
+# production build (构建产物，绝对不要传)
 out/
 build/
 dist/
 
-# plasmo
-.plasmo
+# plasmo specific (Plasmo 特有)
+.plasmo/
+.parcel-cache/
 
 # typescript
 .tsbuildinfo
+
+# IDE (可选，建议加上，保持仓库干净)
+.vscode/
+.idea/

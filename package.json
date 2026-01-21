@@ -1,7 +1,7 @@
 {
-  "name": "gemini-chat-manager",
-  "displayName": "Gemini chat manager",
-  "version": "0.0.1",
+  "name": "chat-sidebar-pro",
+  "displayName": "Chat Sidebar",
+  "version": "1.1.0",
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "scripts": {
@@ -20,12 +20,19 @@
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
     "prettier": "3.2.4",
+    "tailwindcss": "^3.4.17",
     "typescript": "5.3.3"
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "https://gemini.google.com/*"
+    ],
+    "permissions": [
+      "storage",
+      "tabs"
     ]
   }
 }
